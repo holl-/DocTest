@@ -17,11 +17,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install --quiet pdoc3
         
-      - name: Build documentation
-        run: pdoc --html --output-dir build --force phi
+      - name: Build API with pdoc3
+        run: pdoc --html --output-dir docs --force phi
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          folder: docs # The folder the action should deploy.
