@@ -13974,6 +13974,82 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;/home/runner/work/DocTest/DocTest/docs&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">executable</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;/opt/hostedtoolcache/Python/3.9.5/x64/bin/python&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">phi.flow</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">smoke</span> <span class="o">=</span> <span class="n">CenteredGrid</span><span class="p">(</span><span class="n">Noise</span><span class="p">(),</span> <span class="n">extrapolation</span><span class="o">.</span><span class="n">ZERO</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">64</span><span class="p">)</span>
 <span class="n">view</span><span class="p">(</span><span class="n">smoke</span><span class="p">);</span>
@@ -13999,20 +14075,19 @@ a.anchor-link {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_1547/1806326552.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> phi<span class="ansi-blue-fg">.</span>flow <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> smoke <span class="ansi-blue-fg">=</span> CenteredGrid<span class="ansi-blue-fg">(</span>Noise<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> extrapolation<span class="ansi-blue-fg">.</span>ZERO<span class="ansi-blue-fg">,</span> x<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">64</span><span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">64</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> view<span class="ansi-blue-fg">(</span>smoke<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">;</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># for i in view(autorun=False).range(10):</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-red-fg">#     print(threading.current_thread().name, threading.current_thread().ident)</span>
 
-
-
-
-
-<div id="20e62101-e666-40f4-965f-fe5dead22dc2" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('20e62101-e666-40f4-965f-fe5dead22dc2');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "de502b5104184470b65b844d8266828d"}
-</script>
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;phi.flow&#39;</pre>
 </div>
-
 </div>
 
 </div>
@@ -14022,11 +14097,11 @@ var element = document.getElementById('20e62101-e666-40f4-965f-fe5dead22dc2');
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">anim</span> <span class="o">=</span> <span class="n">vis</span><span class="o">.</span><span class="n">animate</span><span class="p">(</span><span class="n">smoke</span><span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
-<span class="n">Video</span><span class="p">(</span><span class="n">anim</span><span class="o">.</span><span class="n">to_html5_video</span><span class="p">(),</span> <span class="n">embed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">a</span>
 </pre></div>
 
      </div>
@@ -14042,352 +14117,19 @@ var element = document.getElementById('20e62101-e666-40f4-965f-fe5dead22dc2');
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>.</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">view</span><span class="p">()</span>
-<span class="n">view</span><span class="p">(</span><span class="n">smoke</span><span class="p">)</span>
-<span class="n">view</span><span class="p">(</span><span class="s1">&#39;smoke&#39;</span><span class="p">)</span>
-<span class="n">view</span><span class="p">([</span><span class="n">smoke</span><span class="p">,</span> <span class="n">velocity</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">threading</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
-<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="n">progress</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatProgress</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">work</span><span class="p">(</span><span class="n">progress</span><span class="p">:</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatProgress</span><span class="p">):</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="mi">100</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">total</span><span class="p">):</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
-        <span class="n">progress</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">total</span>
-
-<span class="n">thread</span> <span class="o">=</span> <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">work</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">progress</span><span class="p">,))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">progress</span><span class="p">)</span>
-<span class="n">thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
 
 
-
-
-
-<div id="9d0254fc-b93c-4569-ad7e-929b34b6f756" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('9d0254fc-b93c-4569-ad7e-929b34b6f756');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "25ae97ad625249f6973f6a22d2ea6604"}
-</script>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>5</pre>
 </div>
 
 </div>
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">gui</span> asyncio
-
-<span class="kn">import</span> <span class="nn">asyncio</span>
-<span class="k">def</span> <span class="nf">wait_for_change</span><span class="p">(</span><span class="n">widget</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-    <span class="n">future</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Future</span><span class="p">()</span>
-    <span class="k">def</span> <span class="nf">getvalue</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
-        <span class="c1"># make the new value available</span>
-        <span class="n">future</span><span class="o">.</span><span class="n">set_result</span><span class="p">(</span><span class="n">change</span><span class="o">.</span><span class="n">new</span><span class="p">)</span>
-        <span class="n">widget</span><span class="o">.</span><span class="n">unobserve</span><span class="p">(</span><span class="n">getvalue</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-    <span class="n">widget</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">getvalue</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">future</span>
-
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">IntSlider</span><span class="p">,</span> <span class="n">Output</span>
-<span class="n">slider</span> <span class="o">=</span> <span class="n">IntSlider</span><span class="p">()</span>
-<span class="n">out</span> <span class="o">=</span> <span class="n">Output</span><span class="p">()</span>
-
-<span class="k">async</span> <span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-        <span class="n">out</span><span class="o">.</span><span class="n">append_stdout</span><span class="p">(</span><span class="s1">&#39;did work &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="k">await</span> <span class="n">wait_for_change</span><span class="p">(</span><span class="n">slider</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
-        <span class="n">out</span><span class="o">.</span><span class="n">append_stdout</span><span class="p">(</span><span class="s1">&#39;async function continued with value &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="n">asyncio</span><span class="o">.</span><span class="n">ensure_future</span><span class="p">(</span><span class="n">f</span><span class="p">())</span>
-
-<span class="n">slider</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="439ca351-64fb-45e6-97d0-6489c43c4090" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('439ca351-64fb-45e6-97d0-6489c43c4090');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "6fb29dd57ca642768dff3f8864ca34af"}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">Button</span>
-<span class="kn">from</span> <span class="nn">phi.app._widgets._poll</span> <span class="kn">import</span> <span class="n">ui_events</span>
-
-<span class="c1"># Set up simple GUI, button with on_click callback</span>
-<span class="c1"># that sets ui_done=True and changes button text</span>
-<span class="n">ui_done</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="k">def</span> <span class="nf">on_click</span><span class="p">(</span><span class="n">btn</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">ui_done</span>
-    <span class="n">ui_done</span> <span class="o">=</span> <span class="kc">True</span>
-    <span class="n">btn</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;👍&#39;</span>
-
-<span class="n">btn</span> <span class="o">=</span> <span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Click Me&#39;</span><span class="p">)</span>
-<span class="n">btn</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_click</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">btn</span><span class="p">)</span>
-
-<span class="c1"># Wait for user to press the button</span>
-<span class="k">with</span> <span class="n">ui_events</span><span class="p">()</span> <span class="k">as</span> <span class="n">poll</span><span class="p">:</span>
-    <span class="k">while</span> <span class="n">ui_done</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
-        <span class="n">poll</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>                <span class="c1"># React to UI events (upto 10 at a time)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
-
-<span class="n">play</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Play</span><span class="p">(</span>
-    <span class="n">value</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
-    <span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="nb">max</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">interval</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
-    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Press play&quot;</span><span class="p">,</span>
-    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-    <span class="n">show_repeat</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;10px&#39;</span><span class="p">))</span>
-<span class="n">slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="k">lambda</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Change&quot;</span><span class="p">),</span> <span class="n">names</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
-<span class="n">widgets</span><span class="o">.</span><span class="n">jslink</span><span class="p">((</span><span class="n">play</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">slider</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">))</span>
-<span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">play</span><span class="p">,</span> <span class="n">slider</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="b215a257-46b0-4477-9476-525dd1f628d7" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('b215a257-46b0-4477-9476-525dd1f628d7');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "71b6e263ce2a420a9529e44351f4b173"}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">toggle</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">ToggleButtons</span><span class="p">(</span>
-    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;🡡&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;⬤&#39;</span><span class="p">],</span>
-    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-    <span class="n">button_style</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>  <span class="c1"># &#39;success&#39;, &#39;info&#39;, &#39;warning&#39;, &#39;danger&#39; or &#39;&#39;</span>
-    <span class="n">tooltips</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Vectors as arrows&#39;</span><span class="p">,</span> <span class="s1">&#39;x component as heatmap&#39;</span><span class="p">,</span> <span class="s1">&#39;y component as heatmap&#39;</span><span class="p">,</span> <span class="s1">&#39;z component as heatmap&#39;</span><span class="p">,</span> <span class="s1">&#39;vector length as heatmap&#39;</span><span class="p">],</span>
-    <span class="c1">#  icons=[&#39;check&#39;] * 3</span>
-    <span class="c1"># layout=widgets.Layout(width=&#39;150px&#39;),</span>
-<span class="p">)</span>
-<span class="n">toggle</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">button_width</span> <span class="o">=</span> <span class="s1">&#39;30px&#39;</span>
-<span class="n">toggle</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-
-
-
-
-
-<div id="37b3195c-5b33-422f-b792-91f822972557" class="jupyter-widgets jp-OutputArea-output ">
-<script type="text/javascript">
-var element = document.getElementById('37b3195c-5b33-422f-b792-91f822972557');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "bf25b9f07b8742e4963fe4fdc2fc2694"}
-</script>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div>
