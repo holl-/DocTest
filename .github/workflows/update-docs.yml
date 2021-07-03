@@ -13,8 +13,9 @@ jobs:
         uses: actions/setup-python@v2
         
       - name: Install dependencies 🔧
-        run: python -m pip install --upgrade pip
-        run: pip install --quiet pdoc3
+        run: |
+          python -m pip install --upgrade pip
+          pip install --quiet pdoc3
         
       - name: Build documentation
         run: pdoc --html --output-dir build --force phi
