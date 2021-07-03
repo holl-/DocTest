@@ -1,6 +1,8 @@
 # Documentation Test
 
-[Jupyter Notebook](demos.ipynb)
+[Jupyter Notebook](demos.html)
+
+[API](phi/)
 
 Simple diagram
 
