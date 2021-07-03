@@ -14044,54 +14044,18 @@ a.anchor-link {
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">phi.flow</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">smoke</span> <span class="o">=</span> <span class="n">CenteredGrid</span><span class="p">(</span><span class="n">Noise</span><span class="p">(),</span> <span class="n">extrapolation</span><span class="o">.</span><span class="n">ZERO</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">64</span><span class="p">)</span>
-<span class="n">view</span><span class="p">(</span><span class="n">smoke</span><span class="p">);</span>
-<span class="c1"># for i in view(autorun=False).range(10):</span>
-<span class="c1">#     print(threading.current_thread().name, threading.current_thread().ident)</span>
-<span class="c1">#     time.sleep(.5)</span>
-<span class="c1">#     smoke = field.laplace(smoke)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">phi</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_1552/1806326552.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> phi<span class="ansi-blue-fg">.</span>flow <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> smoke <span class="ansi-blue-fg">=</span> CenteredGrid<span class="ansi-blue-fg">(</span>Noise<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> extrapolation<span class="ansi-blue-fg">.</span>ZERO<span class="ansi-blue-fg">,</span> x<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">64</span><span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">64</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> view<span class="ansi-blue-fg">(</span>smoke<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">;</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg"># for i in view(autorun=False).range(10):</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-red-fg">#     print(threading.current_thread().name, threading.current_thread().ident)</span>
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;phi.flow&#39;</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
